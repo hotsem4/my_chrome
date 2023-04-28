@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/image/sleep_of_night.png);
+}
+
+#upLine {
+  width: 100vw;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.413);
+  backdrop-filter: blur(30px);
+  display: flex;
+  align-items: center;
+}
+
+.upLineText {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+#upLineName {
+  font-weight: 700;
+}
+
+#windows {
+  margin-top: 50px;
+  background-color: #eaeaea;
+  background-image: url(/image/sleep_of_night_op50.png);
+  border-radius: 10px;
+  height: 85vh;
+  width: 90vw;
+  box-shadow: 10px 20px 200px 10px #d0af8b;
+  display: flex;
+  flex-direction: column;
+}
+
+#status-bar {
+  display: flex;
+  background-color: black;
+  width: 90vw;
+  height: 28px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-items: center;
+}
+.status_circle {
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background-color: wheat;
+  margin-left: 7px;
+}
+
+#green_circle {
+  background-color: rgb(0, 230, 0);
+}
+#yellow_circle {
+  background-color: rgb(255, 220, 22);
+}
+#red_circle {
+  background-color: rgb(255, 73, 73);
+  margin-left: 20px;
+}
+
+#mainPage {
+  height: calc(90vh - 28px);
+  width: 90vw;
+}
