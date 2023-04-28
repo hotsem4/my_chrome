@@ -11,10 +11,10 @@ body {
   width: 300px;
   margin: 50px auto;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: none;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0.4);
 }
 
 .screen {

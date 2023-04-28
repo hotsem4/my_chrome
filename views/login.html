@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/login-style.css" />
     <link rel="stylesheet" href="/css/cal_style.css" />
     <link
       rel="stylesheet"
@@ -32,9 +33,35 @@
         <div class="status_circle" id="green_circle"></div>
       </div>
       <div id="mainPage">
-        <div></div>
-        <div></div>
+        <span id="helloMessage"></span>
+        <div id="loginBackground">
+          <div class="wrapper">
+            <div class="cube">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+              <div class="four"></div>
+              <div class="five"></div>
+              <div class="six"></div>
+            </div>
+          </div>
+          <!--text-->
+          <span id="loginQuestion">Tell Me Your Name?</span>
+          <form id="loginInputDiv">
+            <input
+              id="userNameInput"
+              type="text"
+              maxlength="15"
+              placeholder="name..."
+              oninput="showArrow()"
+            />
+            <button id="arrow-button" style="display: none">
+              <i class="fa-solid fa-arrow-right fa-xs"></i>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
+    <script src="/js/index.js"></script>
   </body>
 </html>
