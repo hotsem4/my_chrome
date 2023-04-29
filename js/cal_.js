@@ -1,3 +1,5 @@
+'use strict';
+
 let display = document.getElementById('display');
 let calculated = false; // append할 때 결과값이 있는 상태인지 확인하기 위한 변수
 

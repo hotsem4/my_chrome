@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="upLine">
+      <i class="fa-brands fa-apple fa-lg" style="margin-left: 10px"></i>
+      <span class="upLineText" id="upLineName"></span>
+      <span class="upLineText">파일</span>
+      <span class="upLineText">수정</span>
+      <span class="upLineText">보기</span>
+      <span class="upLineText">방문 기록</span>
+      <span class="upLineText">북마크</span>
+      <i class="fa-solid fa-battery-three-quarters fa-xl"></i>
+      <i class="fa-solid fa-volume-xmark"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-sliders"></i>
+      <span id="date" class="date upLineText"></span>
+      <span id="time" class="time upLineText"></span>
+    </div>
+    <div id="windows">
+      <!--윗 검은 줄-->
+      <div id="status-bar">
+        <div class="status_circle" id="red_circle"></div>
+        <div class="status_circle" id="yellow_circle"></div>
+        <div class="status_circle" id="green_circle"></div>
+      </div>
+      <div id="mainPage">
+        <div id="todolist">
+          <div class="main__title">
+            <h1>To do list</h1>
+          </div>
+          <div class="input__section">
+            <form>
+              <div>
+                <input
+                  type="text"
+                  class="item"
+                  maxlength="15"
+                  autofocus="true"
+                />
+              </div>
+              <div>
+                <span type="button" class="input__button">
+                  <i class="fas fa-plus-circle"></i>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="item__list"></div>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/clock.js"></script>
+    <script src="/js/todo.js"></script>
+  </body>
+</html>

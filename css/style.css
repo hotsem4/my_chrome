@@ -22,8 +22,38 @@ body {
 }
 
 .upLineText {
-  margin-left: 10px;
+  margin-left: 20px;
   margin-top: 3px;
+  font-size: 15px;
+}
+
+.date {
+  position: absolute;
+  top: 1;
+  right: 60px; /* adjust this value as necessary */
+}
+
+.time {
+  position: absolute;
+  top: 10;
+  right: 10px;
+}
+.fa-sliders {
+  position: absolute;
+  right: 165px;
+}
+.fa-magnifying-glass {
+  position: absolute;
+  right: 200px;
+}
+
+.fa-volume-xmark {
+  position: absolute;
+  right: 230px;
+}
+.fa-battery-three-quarters {
+  position: absolute;
+  right: 260px;
 }
 
 #windows {
@@ -69,4 +99,6 @@ body {
 #mainPage {
   height: calc(90vh - 28px);
   width: 90vw;
+  display: flex;
+  align-items: center;
 }
