@@ -101,4 +101,18 @@ body {
   width: 90vw;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+}
+#todoList {
+  height: 628px;
+  width: 400px;
+  margin-left: 100px;
+  position: absolute;
+  top: 70%; /* adjust this value as necessary */
+  left: 20%; /* adjust this value as necessary */
+  transform: translate(-50%, -50%);
+}
+#mainTime {
+  height: 628px;
+  width: 400px;
 }

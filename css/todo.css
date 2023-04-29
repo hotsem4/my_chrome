@@ -1,9 +1,9 @@
 body {
-  caret-color: #a4b002;
+  caret-color: #ffffff;
   color: #272341;
 }
 
-#todolist {
+#todoList {
   bottom: 0;
   text-align: left;
   max-width: 400px;
@@ -13,7 +13,7 @@ body {
   background: linear-gradient(135deg, #dad299, #b0dab9); */
   background-color: rgba(27, 35, 37, 0.7);
 
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .main__title {
@@ -22,6 +22,7 @@ body {
   padding-bottom: 0px;
   text-align: center;
   color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .main__title h1 {
@@ -43,8 +44,15 @@ body {
   width: 200px;
   height: 30px;
   border-radius: 15px;
-  border: 1px solid #fbe7c6;
-  padding: 0px 30px;
+  border: none;
+  padding: 5px 30px;
+  margin-bottom: 3px;
+  margin-left: -10px;
+  color: white;
+  background: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
 }
 
 *:focus {
@@ -53,7 +61,7 @@ body {
 
 .input__button {
   background-color: transparent;
-  font-size: 30px;
+  font-size: 35px;
   line-height: 60px;
   margin-left: 5px;
   color: white;
