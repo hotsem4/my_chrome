@@ -12,7 +12,7 @@ var randomIndex = Math.floor(Math.random() * images.length);
 var selectedImage = images[randomIndex];
 let selectedImage50 = images50[randomIndex];
 
-document.body.style.backgroundImage = `url("/image/${selectedImage}")`;
+document.body.style.backgroundImage = `url("image/${selectedImage}")`;
 document.querySelector(
   '#windows'
-).style.backgroundImage = `url("/image/${selectedImage50}")`;
+).style.backgroundImage = `url("image/${selectedImage50}")`;
