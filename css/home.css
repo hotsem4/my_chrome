@@ -75,3 +75,48 @@ a:visited {
   justify-content: space-around;
   margin-top: 20px;
 }
+
+#youtube {
+  max-width: 400px;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  background-color: rgba(27, 35, 37, 0.7);
+
+  border-radius: 20px;
+  position: relative;
+}
+
+#youtubeBox {
+  width: 400px;
+  height: 400px;
+
+  font-size: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+}
+
+#youtubeName {
+  color: aliceblue;
+}
+#youtubeImg {
+  /* display: inline-block; */
+  position: absolute;
+  top: 15%;
+  left: 20px;
+  border-radius: 50px;
+}
+
+#youtubeText {
+  position: absolute;
+  top: 270px;
+  left: 25px;
+}
+#youtubeText span {
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+}
