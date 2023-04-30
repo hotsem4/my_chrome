@@ -1,0 +1,12 @@
+#mainTimer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainDate {
+  font-size: 35px;
+}
+
+#mainTime {
+  font-size: 120px;
+}

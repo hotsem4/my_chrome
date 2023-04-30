@@ -1,26 +1,3 @@
-// let minInput = document.querySelector('#minInput');
-// let secInput = document.querySelector('#secInput');
-// let startBtn = document.querySelector('#startBtn');
-
-// startBtn.addEventListener('click', function () {
-//   let min = parseInt(minInput.value) || 0;
-//   let sec = parseInt(secInput.value) || 0;
-//   let time = min * 60 + sec;
-
-//   let x = setInterval(function () {
-//     min = parseInt(time / 60);
-//     sec = time % 60;
-
-//     document.getElementById('demo').innerHTML = `${min} : ${sec}`;
-//     time--;
-
-//     if (time < 0) {
-//       clearInterval(x);
-//       document.getElementById('demo').innerHTML = '땡땡땡!!!';
-//     }
-//   }, 1000);
-// });
-
 window.onload = function () {
   let timer_sec;
   let timer_min;

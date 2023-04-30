@@ -1,0 +1,60 @@
+#stopWatch {
+  max-width: 400px;
+  height: 220px;
+  width: 400px;
+  margin: auto;
+  background-color: rgba(27, 35, 37, 0.7);
+
+  margin-bottom: 42px;
+  border-radius: 20px;
+  position: relative;
+}
+
+p {
+  font-size: 25px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+}
+#stopWatchBox {
+  height: 180px;
+  width: 400px;
+  position: absolute;
+  top: 30px;
+  left: 0%;
+}
+#displayTime {
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  font-size: 70px;
+}
+
+button {
+  background-color: whitesmoke;
+  color: rgb(17, 5, 5);
+  font-family: 'Boogaloo', cursive;
+}
+
+.w-btn {
+  /* position: relative; */
+  border: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-family: 'paybooc-Light', sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.w-btn-indigo {
+  background-color: aliceblue;
+  color: #1e6b7b;
+}
+
+.w-btn-green {
+  background-color: #77af9c;
+  color: #d7fff1;
+}

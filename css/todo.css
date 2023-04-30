@@ -4,16 +4,12 @@ body {
 }
 
 #todoList {
-  bottom: 0;
   text-align: left;
   max-width: 400px;
   margin: auto;
-  /* background: linear-gradient(135deg, #abbaab, #ffffff);
-  background: linear-gradient(135deg, #70e1f5, #ffd194);
-  background: linear-gradient(135deg, #dad299, #b0dab9); */
   background-color: rgba(27, 35, 37, 0.7);
 
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .main__title {
@@ -60,10 +56,12 @@ body {
 }
 
 .input__button {
+  display: block;
   background-color: transparent;
   font-size: 35px;
   line-height: 60px;
   margin-left: 5px;
+  margin-top: 10px;
   color: white;
   border: 0;
 }

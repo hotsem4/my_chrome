@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/cal_style.css" />
+    <link rel="stylesheet" href="/css/tetris.css" />
+
     <link
       href="https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css"
       rel="stylesheet"
@@ -17,12 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>테트리스 게임!!</title>
   </head>
   <body>
     <div id="upLine">
       <i class="fa-brands fa-apple fa-lg" style="margin-left: 10px"></i>
-      <span class="upLineText" id="upLineName"><b>Calculator</b></span>
+      <span class="upLineText" id="upLineName"><b>Tetris</b></span>
       <span class="upLineText">파일</span>
       <span class="upLineText">수정</span>
       <span class="upLineText">보기</span>
@@ -47,40 +48,23 @@
         <div class="status_circle" id="green_circle"></div>
       </div>
 
-      <div id="calBox">
+      <div id="tetrisBox">
         <!--cal-->
-        <div class="calculator">
-          <div class="screen">
-            <input type="text" id="display" readonly />
+        <div class="wrapper">
+          <div class="game-text">
+            Game Over!!
+            <button>restart!</button>
           </div>
-          <div class="buttons">
-            <button class="operator" onclick="clearDisplay()">C</button>
-            <button class="operator" onclick="append('(')">(</button>
-            <button class="operator" onclick="append(')')">)</button>
-            <button class="operator" onclick="deleteLast()">⌫</button>
-            <button class="number" onclick="append('7')">7</button>
-            <button class="number" onclick="append('8')">8</button>
-            <button class="number" onclick="append('9')">9</button>
-            <button class="operator" onclick="append('/')">÷</button>
-            <button class="number" onclick="append('4')">4</button>
-            <button class="number" onclick="append('5')">5</button>
-            <button class="number" onclick="append('6')">6</button>
-            <button class="operator" onclick="append('*')">x</button>
-            <button class="number" onclick="append('2')">2</button>
-            <button class="number" onclick="append('1')">1</button>
-            <button class="number" onclick="append('3')">3</button>
-            <button class="operator" onclick="append('-')">-</button>
-            <button class="number" onclick="append('.')">.</button>
-            <button class="number" onclick="append('0')">0</button>
-            <button class="operator" onclick="calculate()">=</button>
-            <button class="operator" onclick="append('+')">+</button>
+          <div class="score">0</div>
+          <div class="playground">
+            <ul></ul>
           </div>
         </div>
       </div>
 
-      <script src="/js/cal_.js"></script>
+      <script src="/js/tetris.js" type="module"></script>
       <script src="/js/share.js"></script>
-      <script src="/js/background.js"></script>
+
       <script src="/js/clock.js"></script>
     </div>
   </body>

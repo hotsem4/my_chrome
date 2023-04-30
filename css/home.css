@@ -1,0 +1,77 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+#mainPage {
+  height: calc(90vh - 28px);
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#todoList {
+  height: 628px;
+  width: 400px;
+  position: absolute;
+  top: 54%; /* adjust this value as necessary */
+  left: 20%; /* adjust this value as necessary */
+  transform: translate(-50%, -50%);
+}
+#mainCenter {
+  height: 628px;
+  width: 500px;
+  position: absolute;
+  top: 60%; /* adjust this value as necessary */
+  left: 50%; /* adjust this value as necessary */
+  transform: translate(-50%, -50%);
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.manyCircle {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(0, 0, 0, 0.7);
+  border-radius: 40px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.manyIcon {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.firstLine {
+  display: flex;
+  justify-content: space-around;
+}
+
+.iconBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.iconBoxText {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.secondLine {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}

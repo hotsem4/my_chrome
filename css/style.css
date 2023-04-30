@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Cafe24SsurroundAir';
+  font-weight: bold;
 }
 
 body {
@@ -27,33 +29,38 @@ body {
   font-size: 15px;
 }
 
-.date {
+.upLineDate {
   position: absolute;
   top: 1;
   right: 60px; /* adjust this value as necessary */
 }
 
-.time {
+.upLineTime {
   position: absolute;
   top: 10;
   right: 10px;
 }
 .fa-sliders {
   position: absolute;
-  right: 165px;
+  right: 160px;
 }
 .fa-magnifying-glass {
   position: absolute;
-  right: 200px;
+  right: 190px;
+}
+
+.fa-wifi {
+  position: absolute;
+  right: 220px;
 }
 
 .fa-volume-xmark {
   position: absolute;
-  right: 230px;
+  right: 255px;
 }
 .fa-battery-three-quarters {
   position: absolute;
-  right: 260px;
+  right: 285px;
 }
 
 #windows {
@@ -94,25 +101,20 @@ body {
 #red_circle {
   background-color: rgb(255, 73, 73);
   margin-left: 20px;
-}
-
-#mainPage {
-  height: calc(90vh - 28px);
-  width: 90vw;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
-#todoList {
-  height: 628px;
+.fa-xmark {
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+#rightBox {
+  height: 630px;
   width: 400px;
-  margin-left: 100px;
+
   position: absolute;
-  top: 70%; /* adjust this value as necessary */
-  left: 20%; /* adjust this value as necessary */
-  transform: translate(-50%, -50%);
-}
-#mainTime {
-  height: 628px;
-  width: 400px;
+  top: 20.8%;
+  right: 9%;
 }

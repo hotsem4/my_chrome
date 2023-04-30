@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/home.css" />
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/todo.css" />
+    <link rel="stylesheet" href="/css/clock.css" />
+    <link rel="stylesheet" href="/css/stopWatch.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -31,15 +34,18 @@
       <span class="upLineText">북마크</span>
       <i class="fa-solid fa-battery-three-quarters fa-xl"></i>
       <i class="fa-solid fa-volume-xmark"></i>
+      <i class="fa-solid fa-wifi"></i>
       <i class="fa-solid fa-magnifying-glass"></i>
       <i class="fa-solid fa-sliders"></i>
-      <span id="date" class="date upLineText"></span>
-      <span id="time" class="time upLineText"></span>
+      <span id="date" class="upLineDate upLineText"></span>
+      <span id="time" class="upLineTime upLineText"></span>
     </div>
     <div id="windows">
       <!--윗 검은 줄-->
       <div id="status-bar">
-        <div class="status_circle" id="red_circle"></div>
+        <a href="/views/login.html">
+          <div class="status_circle" id="red_circle"></div>
+        </a>
         <div class="status_circle" id="yellow_circle"></div>
         <div class="status_circle" id="green_circle"></div>
       </div>
@@ -67,11 +73,144 @@
           </div>
           <div class="item__list"></div>
         </div>
-        <div id="mainTime"></div>
-        <div></div>
+        <div id="mainCenter">
+          <div id="mainTimer">
+            <span id="mainDate" class="date"></span>
+            <span id="mainTime" class="time"></span>
+          </div>
+          <div class="manyIcon">
+            <div class="firstLine">
+              <div class="iconBox">
+                <a href="http://www.google.com" class="iconLick">
+                  <div id="circle4" class="manyCircle">
+                    <img
+                      src="/icon/naver.png"
+                      height="30px"
+                      width="30px"
+                      alt="naver"
+                    />
+                  </div>
+                  <span class="iconBoxText">Naver</span>
+                </a>
+              </div>
+
+              <div class="iconBox">
+                <a href="http://github.com" class="iconLick">
+                  <div id="circle2" class="manyCircle">
+                    <i
+                      class="fa-brands fa-github-alt fa-2xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+                </a>
+                <span class="iconBoxText">Github</span>
+              </div>
+
+              <div class="iconBox">
+                <a href="https://nomadcoders.co/" class="iconLink">
+                  <div id="circle3" class="manyCircle">
+                    <img
+                      src="/icon/nomadcoders.svg"
+                      height="35px"
+                      width="35px"
+                      alt="nomadcoders"
+                    />
+                  </div>
+                  <span class="iconBoxText">Nomad</span>
+                </a>
+              </div>
+
+              <div class="iconBox">
+                <a href="http://naver.com" class="iconLink">
+                  <div id="circle1" class="manyCircle">
+                    <img
+                      src="/icon/chrome.png"
+                      height="40px"
+                      width="40px"
+                      alt="chrome"
+                    />
+                  </div>
+                  <span class="iconBoxText">Chrome</span>
+                </a>
+              </div>
+            </div>
+            <div class="secondLine">
+              <div class="iconBox">
+                <a href="/views/cal.html" class="iconLink">
+                  <div id="circle5" class="manyCircle">
+                    <i
+                      class="fa-solid fa-calculator fa-xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+                  <span class="iconBoxText">Cal</span>
+                </a>
+              </div>
+
+              <div class="iconBox">
+                <a href="/views/tetris.html" class="iconLink">
+                  <div id="circle6" class="manyCircle">
+                    <i
+                      class="fa-solid fa-cubes-stacked fa-2xl"
+                      style="color: #ffffff"
+                    ></i>
+                  </div>
+                  <span class="iconBoxText">Tetris</span>
+                </a>
+              </div>
+
+              <div class="iconBox">
+                <a href="https://www.netflix.com/" class="iconLink">
+                  <div id="circle7" class="manyCircle">
+                    <img
+                      src="/icon/netflex.png"
+                      height="30px"
+                      width="30px"
+                      alt=""
+                    />
+                  </div>
+                  <span class="iconBoxText">Netflex</span>
+                </a>
+              </div>
+
+              <div class="iconBox">
+                <a href="https://chat.openai.com/" class="iconLink">
+                  <div id="circle8" class="manyCircle">
+                    <img
+                      src="/icon/chatGPT.png"
+                      height="30px"
+                      width="30px"
+                      alt=""
+                    />
+                  </div>
+                  <span class="iconBoxText">chatGPT</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rightBox">
+          <div id="stopWatch">
+            <div id="stopWatchBox" style="text-align: center">
+              <p>내가 집중한 시간은?</p>
+              <h1 id="displayTime">
+                <span id="hour">00</span>:<span id="min">00</span>:<span
+                  id="sec"
+                  >00</span
+                >
+              </h1>
+              <button class="w-btn w-btn-green" id="start">start</button>
+              <button class="w-btn w-btn-indigo" id="stop">stop</button>
+              <button class="w-btn w-btn-indigo" id="clear">clear</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script src="/js/background.js"></script>
     <script src="/js/index.js"></script>
+    <script src="/js/share.js"></script>
     <script src="/js/clock.js"></script>
     <script src="/js/todo.js"></script>
   </body>
