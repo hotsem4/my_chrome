@@ -1,5 +1,4 @@
 'use strict';
-
 console.log('enend');
 let images = ['Are_you_okay.png', 'beautiful_sleep.png', 'sleep_of_night.png'];
 let images50 = [

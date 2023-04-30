@@ -36,7 +36,7 @@ function handleArrowClick(event) {
   helloMessage.style.display = 'flex';
   // set timeout to move to next page after 3 seconds
   setTimeout(() => {
-    window.location.href = 'index.html';
+    window.location.href = 'home.html';
   }, 2000);
 }
 
