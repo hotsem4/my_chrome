@@ -1,5 +1,4 @@
 'use strict';
-
 const form = document.querySelector('#loginInputDiv');
 const userName = document.querySelector('#userNameInput');
 const arrowButton = document.querySelector('#arrow-button');

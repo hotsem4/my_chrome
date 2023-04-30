@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(/image/sleep_of_night.png);
+  background-image: url(image/sleep_of_night.png);
 }
 
 #upLine {
@@ -66,7 +66,7 @@ body {
 #windows {
   margin-top: 50px;
   background-color: #eaeaea;
-  background-image: url(/image/sleep_of_night_op50.png);
+  background-image: url(image/sleep_of_night_op50.png);
   border-radius: 10px;
   height: 85vh;
   width: 90vw;
