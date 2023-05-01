@@ -54,7 +54,6 @@ function renderBlocks(moveType = '') {
     const x = block[0] + left;
     const y = block[1] + top;
 
-    console.log(playground.childNodes[y]);
     const target = playground.childNodes[y]
       ? playground.childNodes[y].childNodes[0].childNodes[x]
       : null;
@@ -92,12 +91,12 @@ function seizeBlock() {
   checkMatch();
 }
 /**한 층이 완성되면 줄 삭제 함수 */
+
 function checkMatch() {
   const childNodes = playground.childNodes;
   childNodes.forEach((child) => {
     let matched = true;
     child.children[0].childNodes.forEach((li) => {
-      // false라면 줄이 완성되지 않음
       if (!li.classList.contains('seized')) {
         matched = false;
       }
@@ -107,6 +106,15 @@ function checkMatch() {
       prependNewLine();
       score++;
       scoreDisplay.innerText = score;
+      if (score % 5 === 0) {
+        // % 연산자를 사용해서 5의 배수인지 확인
+        duration -= 30; // 맞다면 -10
+        console.log(duration);
+        clearInterval(downInterval);
+        downInterval = setInterval(() => {
+          moveBlock('top', 1);
+        }, duration);
+      }
     }
   });
   generateNewBlock();
@@ -193,5 +201,7 @@ document.addEventListener('keydown', (e) => {
 restartButton.addEventListener('click', () => {
   playground.innerHTML = '';
   gameText.style.display = 'none';
+  score = 0;
+  scoreDisplay.innerHTML = 0;
   init();
 });

@@ -17,7 +17,6 @@
   margin: 0 auto;
   height: 100px;
   width: 100px;
-
   animation: spin 5s infinite linear;
   transform-style: preserve-3d;
 }
