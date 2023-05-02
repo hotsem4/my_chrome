@@ -6,6 +6,12 @@ const loginBackground = document.querySelector('#loginBackground');
 const helloMessage = document.querySelector('#helloMessage');
 const helloSpanTag = document.querySelector('#helloMessage');
 
+// check if userName is in local storage
+if (localStorage.getItem('userName')) {
+  // redirect to home.html
+  window.location.href = 'home.html';
+}
+
 function showArrow() {
   var input = document.querySelector("input[type='text']");
   var button = document.querySelector('#arrow-button');
