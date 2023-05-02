@@ -109,15 +109,6 @@ body {
   margin-left: 1px;
 }
 
-#rightBox {
-  height: 630px;
-  width: 400px;
-
-  position: absolute;
-  top: 20.8%;
-  right: 9%;
-}
-
 #weather {
   position: absolute;
   right: 340px;

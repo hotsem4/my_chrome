@@ -13,14 +13,25 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+}
+
+#rightBox {
+  height: 630px;
+  width: 400px;
+
+  position: absolute;
+  top: 50vh;
+  right: 9%;
+  transform: translate(11%, -60%);
 }
 #todoList {
   height: 628px;
   width: 400px;
   position: absolute;
-  top: 54%; /* adjust this value as necessary */
+  top: 50vh; /* adjust this value as necessary */
   left: 20%; /* adjust this value as necessary */
-  transform: translate(-50%, -50%);
+  transform: translate(-60%, -60%);
 }
 #mainCenter {
   height: 628px;
