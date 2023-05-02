@@ -22,16 +22,16 @@ a:visited {
 
   position: absolute;
   top: 50vh;
-  right: 9%;
-  transform: translate(11%, -60%);
+  right: 17%;
+  transform: translate(50%, -60%);
 }
 #todoList {
   height: 628px;
   width: 400px;
   position: absolute;
-  top: 50vh; /* adjust this value as necessary */
-  left: 20%; /* adjust this value as necessary */
-  transform: translate(-60%, -60%);
+  top: 50vh;
+  left: 17%;
+  transform: translate(-50%, -60%);
 }
 #mainCenter {
   height: 628px;
