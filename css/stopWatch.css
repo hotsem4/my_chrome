@@ -49,6 +49,11 @@ button {
   transition: 0.25s;
 }
 
+.w-btn:active {
+  transform: translateY(3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .w-btn-indigo {
   background-color: aliceblue;
   color: #1e6b7b;
