@@ -1,23 +1,18 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
-  let itemList = JSON.parse(localStorage.getItem('itemList')) || [];
-  let checkedArr = JSON.parse(localStorage.getItem('checkedArr')) || [];
-  let inputButton = document.querySelector('.input__button');
-  let inputField = document.querySelector('.item');
+  const itemList = JSON.parse(localStorage.getItem('itemList')) || [];
+  const checkedArr = JSON.parse(localStorage.getItem('checkedArr')) || [];
+  const inputButton = document.querySelector('.input__button');
+  const inputField = document.querySelector('.item');
+  const todoForm = document.querySelector('.todoForm');
   inputButton.addEventListener('click', addItem);
-  inputField.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-      /*
-        원래 시도는 엔터를 입력해도 추가가 되게 하고 싶었으나 한글의 경우 addItem이 두번 호출되는 문제가 있었음
-        결국 해결하지 못하고 enter 기능을 제한하는 것으로 합의...
-        */
-      event.preventDefault();
-    }
-  });
-
-  function addItem(event) {
+  todoForm.addEventListener('submit', (event) => {
     event.preventDefault();
+    console.log('들어감?');
+    addItem();
+  });
+  function addItem(event) {
     let item = document.querySelector('.item').value;
     if (item === '') {
       alert('Ma!! Dasi Ipryeok Haera!!'); // 마!! 다시 입력해라!!

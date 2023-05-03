@@ -13,8 +13,8 @@ if (localStorage.getItem('userName')) {
 }
 
 function showArrow() {
-  var input = document.querySelector("input[type='text']");
-  var button = document.querySelector('#arrow-button');
+  const input = document.querySelector("input[type='text']");
+  const button = document.querySelector('#arrow-button');
   if (input.value) {
     button.style.display = 'block';
     button.addEventListener('click', function () {

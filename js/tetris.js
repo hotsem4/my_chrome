@@ -46,7 +46,7 @@ function prependNewLine() {
 /**렌더링 함수 */
 function renderBlocks(moveType = '') {
   const { type, direction, top, left } = tempMovingItem;
-  const movingBlocks = document.querySelectorAll('.moving');
+  const movingBlocks = document.querySelectorAll('.moving'); // 움직이고 있는 블럭들의 클래스에는 .moving이 존재함.
   movingBlocks.forEach((moving) => {
     moving.classList.remove(type, 'moving');
   });
