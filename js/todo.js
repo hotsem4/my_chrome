@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const itemList = JSON.parse(localStorage.getItem('itemList')) || [];
   const checkedArr = JSON.parse(localStorage.getItem('checkedArr')) || [];
   const inputButton = document.querySelector('.input__button');
-  const inputField = document.querySelector('.item');
   const todoForm = document.querySelector('.todoForm');
   inputButton.addEventListener('click', addItem);
   todoForm.addEventListener('submit', (event) => {
