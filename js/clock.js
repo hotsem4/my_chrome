@@ -13,10 +13,6 @@ function setClock() {
   document.getElementById(
     'date'
   ).innerHTML = `${month}월 ${date}일 (${dayOfWeek})`;
-  document.getElementById(
-    'mainDate'
-  ).innerHTML = `${year}년 ${month}월 ${date}일 (${dayOfWeek})`;
-  document.getElementById('mainTime').innerHTML = `${hour}:${min}:${sec}`;
 }
 function modifyNumber(time) {
   if (parseInt(time) < 10) {
