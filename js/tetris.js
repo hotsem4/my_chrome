@@ -100,12 +100,10 @@ function seizeBlock() {
     showGameoverText();
     return;
   }
-
   checkMatch();
 }
 
 /**한 층이 완성되면 줄 삭제 함수 */
-
 function checkMatch() {
   const childNodes = playground.childNodes;
   childNodes.forEach((child) => {
@@ -122,7 +120,7 @@ function checkMatch() {
       scoreDisplay.innerText = score;
       if (score % 5 === 0) {
         // % 연산자를 사용해서 5의 배수인지 확인
-        duration -= 30; // 맞다면 -10
+        duration -= 30; // 맞다면 -30
         console.log(duration);
         clearInterval(downInterval);
         downInterval = setInterval(() => {
@@ -201,7 +199,10 @@ document.addEventListener('keydown', (e) => {
     case 38:
       changeDirection();
       break;
-
+    /* 
+    space를 연타할 경우 sezied 되기 전에 위에서 겹처 게임이 종료되는 버그가 있었음.
+    space가 입력될 때의 간격에 delay를 줘서 해결.
+    */
     case 32:
       if (spacebarEnabled) {
         dropBlocks();
