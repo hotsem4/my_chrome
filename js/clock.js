@@ -7,7 +7,7 @@ function setClock() {
   let sec = modifyNumber(dateInfo.getSeconds());
   let year = dateInfo.getFullYear();
   let month = dateInfo.getMonth() + 1; //monthIndex를 반환해주기 때문에 1을 더해준다.
-  let date = dateInfo.getDate();
+  let date = dateInfo.getDay();
   let dayOfWeek = ['일', '월', '화', '수', '목', '금', '토'][date];
   document.getElementById('time').innerHTML = hour + ':' + min;
   document.getElementById(
